@@ -1,0 +1,597 @@
+body {
+    font-family: 'Teko', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+   }
+   
+*, *:before, *:after{
+box-sizing: inherit;
+}
+
+/*-----------------Header----------------*/
+header {
+    margin-bottom: 2px;
+}
+
+header a {
+    margin: 15px;
+    float: right;
+}
+
+header a:link {
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 22px 0;
+    text-align: center;
+}
+
+/*------------------Nav------------------*/
+nav {
+    margin: auto;
+    background-color: #3a3a3a;
+    box-shadow: 0 0 3px #3a3a3a;
+}
+
+nav ul {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul a {
+    text-align: center;
+}
+
+nav a {
+    display: flex;
+    flex: 1 0 10em;  
+    overflow: hidden;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+    transition: .2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    transform: scale(1.1);
+}
+
+/*-----------------Messages------------------*/
+
+.warning {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(255, 255, 122);
+    padding: .3rem;
+    color: brown;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.success {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(168, 255, 180);
+    padding: .3rem;
+    color: gray;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*-----------------Home------------------*/
+
+.welcomeHome {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.delorean {
+    margin: 12px;
+    color: #4c96d7;
+}
+
+.delorean h2 {
+    margin: 0;
+}
+
+.dmc {
+    position: absolute;
+}
+.delorean figure {
+    margin: 0;
+}
+.car {
+    width: 100%;
+}
+
+.delorean ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-info h2 {
+    margin: 10px 0;
+    padding-left: .5rem;
+}
+
+.upgrades {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.item {
+    background-color: #a6cbeb;
+    width: 120px;
+    height: 65px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 25px 0;
+}
+
+.item img {
+    display: block;
+    padding: 1px 0;
+    height: 100%;
+    margin: auto;
+}
+
+.item a {
+    color: gray;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #4c96d7;
+}
+
+/*-----------------Vehicles Classification----------------*/
+
+.classificationTitle {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#inv-display{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul#inv-display {
+    list-style-type: none;
+}
+
+#inv-display li{
+    background-color: lightgray;
+    
+    border-radius: 5px;
+    padding-top: 10px;
+    margin: 20px 15px;
+    text-align: center;
+}
+#inv-display hr {
+    margin: 10px 15px;
+    border-top: 2px solid gray;
+}
+#inv-display li img {
+   width: 50%;
+}
+
+#inv-display a {
+    text-decoration: none;
+    color: #4c96d7;
+}
+
+#inv-display a:hover {
+    color: #3a3a3a;
+}
+
+
+/*-----------------Vehicle Details----------------*/
+
+.carDetailsHead {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.carImg {
+    max-width: 100%;
+}
+
+.price {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px 0;
+    width: 200px;
+    background-color: #4c96d7;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+}
+
+.detailsHr {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.carDescription {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.carColor {
+    display: inline-block;
+    margin: 10px 0 ;
+    text-align: center;
+    width: 50%;
+}
+
+.quantity {
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+    width: 50%;
+}
+
+.reviewsHeader {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.detailsTitle {
+    margin: 20px 0;
+    text-align: center;
+}
+
+fieldset {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 65%;
+}
+
+
+
+#thumb-display::before {
+    content: 'Images';
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+#thumb-display{
+    padding: 0;
+    display: grid;
+}
+
+#thumb-display li {
+    display: flex;
+    justify-content: center;
+}
+
+#thumb-display img {
+    padding-top: 5px;
+    width: 70%;
+}
+
+#image-display {
+    padding-left: 0;
+}
+
+#image-display img {
+    max-width: 100%;
+}
+
+.reviewVehicle {
+    margin: 15px 10px;
+}
+
+label {
+    margin: 0px 10px;
+}
+select {
+    margin: 00px 10px;
+}
+
+textarea {
+    margin: 0px 10px;
+    width: 95%;
+    height: 75px;
+    resize: none;
+}
+
+input {
+    margin: 0px 10px;
+}
+
+.addReview {
+    margin: 20px 10px;
+    background-color: #a6cbeb;
+    border-radius: 5px;
+    padding: .9rem .6rem;
+}
+
+.addReview label {
+    color: #3a3a3a;
+}
+
+.reviewData {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+}
+
+.reviewData label {
+    color: #4c96d7;
+}
+
+/*-----------------Admin----------------*/
+
+.adminData {
+    margin: 5px 15px;
+}
+
+.admin {
+    background-color: lightgray;
+    padding: 5px 15px;
+    margin: 15px 5px;
+    border-radius: 5px;
+}
+
+.adminReview ul li {
+    margin: 10px 0;
+}
+
+.updateUser, .updatePass {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+}
+.updateUser h3, .updatePass h3 {
+    margin: 10px 10px;
+}
+
+.updatePass p {
+    padding: 3px;
+    margin: 5px 10px;
+    font-size: 17px;
+    color:  #3a3a3a;
+}
+
+/*-----------------Update Review----------------*/
+
+.updateReviewInfo {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+}
+
+.updateDate {
+    font-size: larger;
+    color: #4c96d7;
+    text-align: right;
+    margin: 0 10px;
+}
+
+/*-----------------Delete Review----------------*/
+
+.deleteReviewInfo {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+}
+
+.deleteDate {
+    font-size: larger;
+    color: #4c96d7;
+    text-align: right;
+    margin: 0 10px;
+}
+
+.warningDelete {
+    margin: 10px 0;
+}
+
+.addClassification {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+}
+
+.addVehicleForm {
+    margin: 20px 2rem;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#invDescription {
+    width: 80%;
+}
+
+.classList {
+    margin: 10px 00px;
+}
+.addCarInfo {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+}
+
+.addCarInfo li {
+    margin: 10px 5px;
+}
+
+.addCarInfo a{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+
+.addCarInfo a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.vehicleManagement {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+}
+
+#inventoryDisplay {
+    margin: 20px 10px;
+    background-color: #a6cbeb;
+    border-radius: 5px;
+}
+
+#inventoryDisplay a{
+    color: gray;
+    text-decoration: none;
+    
+}
+
+#inventoryDisplay a:hover{
+    color: white;
+}
+
+.loginForm {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+}
+
+.loginForm p {
+    padding: 3px;
+    margin: 0px 12px;
+    font-size: 15px;
+    color:  #3a3a3a;
+}
+
+.loginForm a {
+    text-decoration: none;
+    color: #3a3a3a;
+}
+
+.loginForm a:hover {
+   color: white; 
+}
+
+button {
+    margin: 10px 10px;
+}
+
+.registrationForm, .updateVehicle, .deleteVehicle {
+    margin: 20px 10px;
+    background-color: lightgray;
+    padding: .9rem .6rem;
+    border-radius: 5px;
+
+}
+
+.registrationForm p {
+    padding: 3px;
+    margin: 0px 12px;
+    font-size: 15px;
+    color:  #3a3a3a;
+}
+
+.registrationForm input {
+    margin: 5px 10px;
+}
+
+.invitation {
+    padding: 10px;
+    background-color: #a6cbeb;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.invitation a {
+    text-decoration: none;
+    color: white;
+}
+
+.invitation a:hover {
+    color: #3a3a3a;
+}
+
+.first {
+    padding: 10px;
+    background-color: lightgray;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.first a {
+    text-decoration: none;
+    color: white;
+}
+
+.first a:hover {
+    color: #3a3a3a;
+}
+
+/*-----------------Footer----------------*/
+footer {
+    text-align: center;
+    border-top: 4px solid #3a3a3a;
+    color: #3a3a3a;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+footer p {
+    margin: 0;
+}

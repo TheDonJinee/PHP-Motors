@@ -7,7 +7,6 @@ This app is build using PHP as my backend language following the MVC architectur
 We used several PHP templates with some JS and CSS to provide a friendly UX and a nice UI, these are some demo videos on my app and the link to the app deployed on Heroku:
 
 * [Reviews Demo Video](https://www.youtube.com/watch?v=pqCiOmcv1o0&t=1s)
-* [PHP Motors App](https://phpmotors-app.herokuapp.com/)
 
 # Development Environment
 
@@ -15,8 +14,6 @@ We used several PHP templates with some JS and CSS to provide a friendly UX and 
 * XAMPP 3.2.4
 * PHP 8.0.0
 * MySQL 8.0
-* MariaDB 10.4
-* Heroku
 
 # Useful Websites
 

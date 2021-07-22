@@ -7,7 +7,7 @@ This app is build using PHP as my backend language following the MVC architectur
 We used several PHP templates with some JS and CSS to provide a friendly UX and a nice UI, these are some demo videos on my app and the link to the app deployed on Heroku:
 
 * [Reviews Demo Video](https://www.youtube.com/watch?v=pqCiOmcv1o0&t=1s)
-* [Link to Heroku App](link)
+* [PHP Motors App](https://phpmotors-app.herokuapp.com/)
 
 # Development Environment
 
